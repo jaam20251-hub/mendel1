@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+#simulador {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+#controles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#grafico {
+  width: 250px;
+  height: 200px;
+  background: #e0f7fa;
+  border: 2px dashed #00796b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

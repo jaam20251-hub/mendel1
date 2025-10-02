@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador Leyes de Mendel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌱 Simulador: Leyes de Mendel</h1>
+  <div id="simulador">
+    <div id="grafico">
+      <p>[Visualización de cruce]</p>
+    </div>
+    <div id="controles">
+      <label for="cruce">Selecciona un cruce:</label>
+      <select id="cruce">
+        <option value="AA,AA">AA x AA</option>
+        <option value="AA,aa">AA x aa</option>
+        <option value="Aa,Aa">Aa x Aa</option>
+        <option value="Aa,aa">Aa x aa</option>
+      </select>
+      <button onclick="nuevoDesafio()">🎯 Nuevo desafío</button>
+      <button onclick="mostrarResultados()">Mostrar resultados</button>
+    </div>
+  </div>
+
+  <div id="resultados" style="display:none;">
+    <h3>🔬 Resultados del cruce</h3>
+    <p><strong>Genotipos:</strong> <span id="genotipos"></span></p>
+    <p><strong>Fenotipos:</strong> <span id="fenotipos"></span></p>
+  </div>
+
+  <div id="preguntas">
+    <h3>❓ Preguntas para reflexionar:</h3>
+    <ol>
+      <li>¿Qué proporción de descendencia presenta el rasgo recesivo?</li>
+      <li>¿Cómo afecta el cruce entre individuos heterocigotos?</li>
+      <li>¿Qué diferencia hay entre cruzar AA x aa y Aa x Aa?</li>
+    </ol>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
